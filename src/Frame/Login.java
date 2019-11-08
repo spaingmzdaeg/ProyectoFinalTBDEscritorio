@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package Frame;
+import AppPackage.AnimationClass;
+import java.awt.Color;
 
 /**
  *
@@ -149,62 +151,215 @@ public class Login extends javax.swing.JFrame {
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baloncesto.png"))); // NOI18N
+        jLabel7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel7MouseMoved(evt);
+            }
+        });
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel7MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 80, 70));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/habilidades.png"))); // NOI18N
+        jLabel8.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel8MouseMoved(evt);
+            }
+        });
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel8MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, 80, 70));
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bank.png"))); // NOI18N
+        jLabel9.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel9MouseMoved(evt);
+            }
+        });
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel9MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 80, 70));
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/betting.png"))); // NOI18N
+        jLabel10.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel10MouseMoved(evt);
+            }
+        });
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel10MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 80, 70));
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuario.png"))); // NOI18N
+        jLabel11.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel11MouseMoved(evt);
+            }
+        });
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel11MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 80, 70));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/poker-full.png"))); // NOI18N
+        jLabel12.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel12MouseMoved(evt);
+            }
+        });
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel12MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 80, 70));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/jugador-de-futbol-americano.png"))); // NOI18N
+        jLabel13.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel13MouseMoved(evt);
+            }
+        });
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel13MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 80, 70));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/juego-de-futbol.png"))); // NOI18N
+        jLabel14.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel14MouseMoved(evt);
+            }
+        });
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel14MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, 80, 70));
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/liga-europea-de-la-uefa.png"))); // NOI18N
+        jLabel15.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel15MouseMoved(evt);
+            }
+        });
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel15MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 80, 70));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/football.png"))); // NOI18N
+        jLabel16.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel16MouseMoved(evt);
+            }
+        });
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel16MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, 80, 70));
 
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/basketball-player-scoring.png"))); // NOI18N
+        jLabel17.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel17MouseMoved(evt);
+            }
+        });
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel17MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 80, 70));
 
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/jugador-de-baloncesto.png"))); // NOI18N
+        jLabel18.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel18MouseMoved(evt);
+            }
+        });
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel18MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 80, 70));
 
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon.png"))); // NOI18N
+        jLabel19.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel19MouseMoved(evt);
+            }
+        });
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel19MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 80, 70));
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/grafico-de-estadisticas-de-futbol.png"))); // NOI18N
+        jLabel20.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel20MouseMoved(evt);
+            }
+        });
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel20MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 80, 70));
 
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exito.png"))); // NOI18N
+        jLabel21.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel21MouseMoved(evt);
+            }
+        });
+        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel21MouseExited(evt);
+            }
+        });
         jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 80, 70));
 
         jLabel22.setForeground(new java.awt.Color(0, 0, 0));
@@ -275,6 +430,168 @@ public class Login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel19MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseMoved
+
+        // TODO add your handling code here:
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel19MouseMoved
+
+    private void jLabel19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseExited
+        // TODO add your handling code here:
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel19MouseExited
+
+    private void jLabel9MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseMoved
+        // TODO add your handling code here:
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel9MouseMoved
+
+    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
+        // TODO add your handling code here:
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel9MouseExited
+
+    private void jLabel10MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseMoved
+        // TODO add your handling code here:
+        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel10MouseMoved
+
+    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
+        // TODO add your handling code here:
+        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel10MouseExited
+
+    private void jLabel11MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseMoved
+        // TODO add your handling code here:
+        jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel11MouseMoved
+
+    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
+        // TODO add your handling code here:
+        jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel11MouseExited
+
+    private void jLabel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseMoved
+        // TODO add your handling code here:
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel7MouseMoved
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+        // TODO add your handling code here:
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void jLabel12MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseMoved
+        // TODO add your handling code here:
+        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel12MouseMoved
+
+    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
+        // TODO add your handling code here:
+        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel12MouseExited
+
+    private void jLabel13MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseMoved
+        // TODO add your handling code here:
+        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel13MouseMoved
+
+    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
+        // TODO add your handling code here:
+         jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel13MouseExited
+
+    private void jLabel14MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseMoved
+        // TODO add your handling code here:
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel14MouseMoved
+
+    private void jLabel14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseExited
+        // TODO add your handling code here:
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel14MouseExited
+
+    private void jLabel15MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseMoved
+        // TODO add your handling code here:
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel15MouseMoved
+
+    private void jLabel15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseExited
+        // TODO add your handling code here:
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel15MouseExited
+
+    private void jLabel16MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseMoved
+        // TODO add your handling code here:
+         jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+        
+    }//GEN-LAST:event_jLabel16MouseMoved
+
+    private void jLabel16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseExited
+        // TODO add your handling code here:
+        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel16MouseExited
+
+    private void jLabel17MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseMoved
+        // TODO add your handling code here:
+        jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel17MouseMoved
+
+    private void jLabel17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseExited
+        // TODO add your handling code here:
+          jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel17MouseExited
+
+    private void jLabel18MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseMoved
+        // TODO add your handling code here:
+        jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel18MouseMoved
+
+    private void jLabel18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseExited
+        // TODO add your handling code here:
+         jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel18MouseExited
+
+    private void jLabel20MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseMoved
+        // TODO add your handling code here:
+         jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel20MouseMoved
+
+    private void jLabel20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseExited
+        // TODO add your handling code here:
+         jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel20MouseExited
+
+    private void jLabel21MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseMoved
+        // TODO add your handling code here:
+         jLabel21.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel21MouseMoved
+
+    private void jLabel21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseExited
+        // TODO add your handling code here:
+        jLabel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel21MouseExited
+
+    private void jLabel8MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseMoved
+        // TODO add your handling code here:
+         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK));
+    }//GEN-LAST:event_jLabel8MouseMoved
+
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+        // TODO add your handling code here:
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204,204,0)));
+    }//GEN-LAST:event_jLabel8MouseExited
+                         
+    
+   
 
     /**
      * @param args the command line arguments
