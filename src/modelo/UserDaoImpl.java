@@ -182,7 +182,6 @@ public class UserDaoImpl implements IUserDAO {
     public boolean consultar(String consulta, JTable tabla) {
         boolean completo = false;
 
-        Object registros[];
      
         ResultSet rs;
         User user = null;
@@ -209,46 +208,29 @@ public class UserDaoImpl implements IUserDAO {
         modelo.setColumnIdentifiers(columnasModelo);
         System.out.println(modelo.getColumnCount());
         
-          registros = new Object [ modelo.getColumnCount()];
+         Object registros[] = new Object [ modelo.getColumnCount()];
          
          try{
-             PreparedStatement preparedStatement = ConexionBD2.getConnection().prepareStatement(sql
-                    );
-            
+            PreparedStatement preparedStatement = ConexionBD2.getConnection().prepareStatement(sql);
             rs = preparedStatement.executeQuery();
             while(rs.next()){
+                for(int i = 0;i < registros.length;i++){
+                registros[i] = rs.getString(i+1);
+                }
+                modelo.addRow(registros);
                 
-                
-             for(int i = 0;i <= registros.length;i++){
-             registros[i] = rs.getString(i+1);
-             }
-             
-            }
-         }catch(Exception e){
-             
-         }
-        
-
-        try{
-            PreparedStatement preparedStatement = ConexionBD2.getConnection().prepareStatement(sql
-                    );
-            
-            rs = preparedStatement.executeQuery();
-            while(rs.next()){
-                
-                
-              modelo.addRow(registros);
                 completo = true;
             }
             tabla.setModel(modelo);
             preparedStatement.close();
-            
 
         }catch (Exception e){
             System.out.println(e.getMessage());
             completo = false;
         }
         return  completo;
+         
+  
     }
     
     
