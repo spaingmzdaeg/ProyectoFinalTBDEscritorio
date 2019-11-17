@@ -75,10 +75,29 @@ public class FrameUsers extends javax.swing.JFrame {
         txtcellphone = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         btnBuscar = new javax.swing.JButton();
+        cbuser_id = new javax.swing.JCheckBox();
+        cbemail = new javax.swing.JCheckBox();
+        cbpassword = new javax.swing.JCheckBox();
+        cbfirst_name = new javax.swing.JCheckBox();
+        cblast_name = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
         ScrollPaneTablaUsers = new javax.swing.JScrollPane();
         TablaUsers = new javax.swing.JTable();
         btnValidar = new javax.swing.JButton();
+        cbpayment_id = new javax.swing.JCheckBox();
+        cbperformance_factor = new javax.swing.JCheckBox();
+        cbcellphone = new javax.swing.JCheckBox();
+        cbaddress = new javax.swing.JCheckBox();
+        cbuser_id2 = new javax.swing.JCheckBox();
+        cbemail2 = new javax.swing.JCheckBox();
+        cbpassword2 = new javax.swing.JCheckBox();
+        cbfirst_name2 = new javax.swing.JCheckBox();
+        cblast_name2 = new javax.swing.JCheckBox();
+        cbaddress2 = new javax.swing.JCheckBox();
+        cbperformance_factor2 = new javax.swing.JCheckBox();
+        cbcellphone2 = new javax.swing.JCheckBox();
+        cbpayment_id2 = new javax.swing.JCheckBox();
+        btnVisor = new javax.swing.JButton();
 
         bg.add(rbAltas1);
         bg.add(rbBajas);
@@ -105,6 +124,11 @@ public class FrameUsers extends javax.swing.JFrame {
         rbConsultas.setBackground(new java.awt.Color(51, 51, 51));
         rbConsultas.setForeground(new java.awt.Color(255, 255, 255));
         rbConsultas.setText("Consultas");
+        rbConsultas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbConsultasMouseClicked(evt);
+            }
+        });
         rbConsultas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbConsultasActionPerformed(evt);
@@ -360,6 +384,21 @@ public class FrameUsers extends javax.swing.JFrame {
             }
         });
 
+        cbuser_id.setText("user_id");
+        cbuser_id.setVisible(false);
+
+        cbemail.setText("email");
+        cbemail.setVisible(false);
+
+        cbpassword.setText("password");
+        cbpassword.setVisible(false);
+
+        cbfirst_name.setText("first_name");
+        cbfirst_name.setVisible(false);
+
+        cblast_name.setText("last_name");
+        cblast_name.setVisible(false);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -367,13 +406,29 @@ public class FrameUsers extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(45, 45, 45)
                 .addComponent(btnBuscar)
-                .addContainerGap(644, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addComponent(cbuser_id)
+                .addGap(18, 18, 18)
+                .addComponent(cbemail)
+                .addGap(26, 26, 26)
+                .addComponent(cbpassword)
+                .addGap(33, 33, 33)
+                .addComponent(cbfirst_name)
+                .addGap(35, 35, 35)
+                .addComponent(cblast_name)
+                .addGap(86, 86, 86))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnBuscar)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBuscar)
+                    .addComponent(cbuser_id)
+                    .addComponent(cbemail)
+                    .addComponent(cbpassword)
+                    .addComponent(cbfirst_name)
+                    .addComponent(cblast_name))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -402,6 +457,117 @@ public class FrameUsers extends javax.swing.JFrame {
 
         btnValidar.setVisible(false);
         jPanel1.add(btnValidar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 160, 30));
+
+        cbpayment_id.setText("payment_id");
+        cbpayment_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbpayment_idActionPerformed(evt);
+            }
+        });
+        cbpayment_id.setVisible(false);
+        jPanel1.add(cbpayment_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
+
+        cbperformance_factor.setText("performance_factor");
+        cbperformance_factor.setVisible(false);
+        jPanel1.add(cbperformance_factor, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, -1));
+
+        cbcellphone.setText("cellphone");
+        cbcellphone.setVisible(false);
+        jPanel1.add(cbcellphone, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, -1, -1));
+
+        cbaddress.setText("address");
+        cbaddress.setVisible(false);
+        jPanel1.add(cbaddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, -1, -1));
+
+        cbuser_id2.setText("user_id");
+        cbuser_id2.setVisible(false);
+        cbuser_id2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbuser_id2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbuser_id2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, -1, -1));
+
+        cbemail2.setText("email");
+        cbemail2.setVisible(false);
+        cbemail2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbemail2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbemail2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 400, -1, -1));
+
+        cbpassword2.setText("password");
+        cbpassword2.setVisible(false);
+        cbpassword2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbpassword2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbpassword2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 400, -1, -1));
+
+        cbfirst_name2.setText("first_name");
+        cbfirst_name2.setVisible(false);
+        cbfirst_name2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbfirst_name2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbfirst_name2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, -1, -1));
+
+        cblast_name2.setText("last_name");
+        cblast_name2.setVisible(false);
+        cblast_name2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cblast_name2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cblast_name2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, -1, -1));
+
+        cbaddress2.setText("address");
+        cbaddress2.setVisible(false);
+        cbaddress2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbaddress2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbaddress2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+
+        cbperformance_factor2.setText("performance_factor");
+        cbperformance_factor2.setVisible(false);
+        cbperformance_factor2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbperformance_factor2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbperformance_factor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
+
+        cbcellphone2.setText("cellphone");
+        cbcellphone2.setVisible(false);
+        cbcellphone2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbcellphone2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbcellphone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+
+        cbpayment_id2.setText("payment_id");
+        cbpayment_id2.setVisible(false);
+        cbpayment_id2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbpayment_id2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(cbpayment_id2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, -1, -1));
+
+        btnVisor.setText("visor sql");
+        btnVisor.setVisible(false);
+        btnVisor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVisorMouseClicked(evt);
+            }
+        });
+        jPanel1.add(btnVisor, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 430, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 750, 530));
 
@@ -477,6 +643,28 @@ public class FrameUsers extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtcellphoneActionPerformed
 
+    private void tablaOriginal(){
+        TablaUsers.setBackground(new java.awt.Color(102, 102, 102));
+
+TablaUsers.setForeground(new java.awt.Color(255, 255, 255));
+
+TablaUsers.setModel(new javax.swing.table.DefaultTableModel(
+    new Object [][] {
+        {null, null, null, null, null, null, null, null, null},
+        {null, null, null, null, null, null, null, null, null},
+        {null, null, null, null, null, null, null, null, null},
+        {null, null, null, null, null, null, null, null, null}
+    },
+    new String [] {
+        "user_id", "password", "email@", "first_name", "last_name", "address", "performance_factor", "cellphone", "payment_id"
+    }
+));
+
+
+
+ScrollPaneTablaUsers.setViewportView(TablaUsers);
+    }
+    
     private void funcionAltas(){
          if(txtuser_id.getText().equals("")){
          txtuser_id.setBackground(Color.red);
@@ -642,6 +830,11 @@ public class FrameUsers extends javax.swing.JFrame {
 
         
 }
+    public void funcionConsultas(){
+        UserDaoImpl dao = new UserDaoImpl();
+        dao.consultar(armarConsulta(),TablaUsers);
+        
+    }
     
     private void btnagregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarMouseClicked
         // TODO add your handling code here:
@@ -651,6 +844,8 @@ public class FrameUsers extends javax.swing.JFrame {
             funcionBajas();
         }else if(rbCambios.isSelected()){
             funcionCambios();
+        }else if(rbConsultas.isSelected()){
+            funcionConsultas();
         }
         
      
@@ -735,6 +930,8 @@ public class FrameUsers extends javax.swing.JFrame {
 
     private void rbBajasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbBajasMouseClicked
         // TODO add your handling code here:
+        tablaOriginal();
+        actualizarTabla();
         btnValidar.setVisible(false);
         btnBuscar.setVisible(true);
         txtuser_id.setText("");
@@ -755,12 +952,33 @@ public class FrameUsers extends javax.swing.JFrame {
         txtcellphone.setBackground(Color.GRAY);
         txtpayment_id.setText("");
         txtpayment_id.setBackground(Color.GRAY);
+        cbuser_id.setVisible(false);
+        cbuser_id2.setVisible(false);
+        cbemail.setVisible(false);
+        cbemail2.setVisible(false);
+        cbpassword.setVisible(false);
+        cbpassword2.setVisible(false);
+        cbfirst_name.setVisible(false);
+        cbfirst_name2.setVisible(false);
+        cblast_name.setVisible(false);
+        cblast_name2.setVisible(false);
+        cbaddress.setVisible(false);
+        cbaddress2.setVisible(false);
+        cbperformance_factor.setVisible(false);
+        cbperformance_factor2.setVisible(false);
+        cbcellphone.setVisible(false);
+        cbcellphone2.setVisible(false);
+        cbpayment_id.setVisible(false);
+        cbpayment_id2.setVisible(false);
+        btnVisor.setVisible(false);
         btnagregar.setText("Eliminar");
         
     }//GEN-LAST:event_rbBajasMouseClicked
 
     private void rbAltas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbAltas1MouseClicked
         // TODO add your handling code here:
+        tablaOriginal();
+        actualizarTabla();
          btnBuscar.setVisible(false);
          btnValidar.setVisible(false);
         txtuser_id.setText("");
@@ -781,6 +999,25 @@ public class FrameUsers extends javax.swing.JFrame {
         txtcellphone.setBackground(Color.GRAY);
         txtpayment_id.setText("");
         txtpayment_id.setBackground(Color.GRAY);
+        cbuser_id.setVisible(false);
+        cbuser_id2.setVisible(false);
+        cbemail.setVisible(false);
+        cbemail2.setVisible(false);
+        cbpassword.setVisible(false);
+        cbpassword2.setVisible(false);
+        cbfirst_name.setVisible(false);
+        cbfirst_name2.setVisible(false);
+        cblast_name.setVisible(false);
+        cblast_name2.setVisible(false);
+        cbaddress.setVisible(false);
+        cbaddress2.setVisible(false);
+        cbperformance_factor.setVisible(false);
+        cbperformance_factor2.setVisible(false);
+        cbcellphone.setVisible(false);
+        cbcellphone2.setVisible(false);
+        cbpayment_id.setVisible(false);
+        cbpayment_id2.setVisible(false);
+        btnVisor.setVisible(false);
         btnagregar.setText("Agregar");
     }//GEN-LAST:event_rbAltas1MouseClicked
 
@@ -807,14 +1044,95 @@ public class FrameUsers extends javax.swing.JFrame {
   
         }
     }//GEN-LAST:event_btnBuscarMouseClicked
-
-    private void armarConsulta(){
+    
+    private String armarConsulta(){
+       String instruccion ="SELECT ";
+       if(cbuser_id.isSelected()){
+           instruccion+="user_id,";
+       }
+       if(cbemail.isSelected()){
+           instruccion+="email,";
+       }
+       if(cbpassword.isSelected()){
+           instruccion+="password,";
+       }
+       if(cbfirst_name.isSelected()){
+           instruccion+="first_name,";
+       }
+       if(cblast_name.isSelected()){
+           instruccion+="last_name,";
+       }
+       if(cbaddress.isSelected()){
+           instruccion+="address,";
+       }
+       if(cbperformance_factor.isSelected()){
+           instruccion+="performance_factor,";
+       }
+        if(cbcellphone.isSelected()){
+           instruccion+="cellphone,";
+       }
+         if(cbpayment_id.isSelected()){
+           instruccion+="payment_id,";
+       }
        
+       if (instruccion.endsWith(",")) {
+    instruccion = instruccion.substring(0, instruccion.length() - 1) + "";}
+    
+    String instruccion2 =" FROM CHENTE.USERS WHERE ";
+    
+    
+    if(cbuser_id2.isSelected()){
+           instruccion2+="AND user_id = "+"'"+txtuser_id.getText()+"'"+" ";
+       }
+       if(cbemail2.isSelected()){
+           instruccion2+="AND email = "+"'"+txtemail.getText()+"'"+" ";
+       }
+       if(cbpassword2.isSelected()){
+           instruccion2+="AND password = "+"'"+txtpassword.getText()+"'"+" ";
+       }
+       if(cbfirst_name2.isSelected()){
+           instruccion2+="AND first_name = "+"'"+txtfirst_name.getText()+"'"+" ";
+       }
+       if(cblast_name2.isSelected()){
+           instruccion2+="AND last_name = "+"'"+txtfirst_name.getText()+"'"+" ";
+       }
+       if(cbaddress2.isSelected()){
+           instruccion2+="AND address = "+"'"+txtadress.getText()+"'"+" ";
+       }
+       if(cbperformance_factor2.isSelected()){
+           instruccion2+="AND performance_factor = "+"'"+txtperformance_factor.getText()+"'"+" ";
+       }
+       if(cbcellphone2.isSelected()){
+           instruccion2+="AND cellphone = "+"'"+txtcellphone.getText()+"'"+" ";
+       }
+       if(cbpayment_id2.isSelected()){
+           instruccion2+="AND payment_id = "+"'"+txtpayment_id.getText()+"'"+" ";
+       }
+       
+       
+       
+        if (instruccion2.endsWith(",")) {
+    instruccion2 = instruccion2.substring(0, instruccion2.length() - 1) + "";}
         
-    }
+        String cadenaRegreso = (instruccion+instruccion2).replaceFirst("AND", "");
+        
+       
+
+         
+         
+        
+    
+     return cadenaRegreso;
+    
+}
+       
+       
+    
     
     private void rbCambiosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbCambiosMouseClicked
         // TODO add your handling code here:
+        tablaOriginal();
+        actualizarTabla();
         btnValidar.setVisible(false);
         btnBuscar.setVisible(true);
         txtuser_id.setText("");
@@ -835,10 +1153,114 @@ public class FrameUsers extends javax.swing.JFrame {
         txtcellphone.setBackground(Color.GRAY);
         txtpayment_id.setText("");
         txtpayment_id.setBackground(Color.GRAY);
+        cbuser_id.setVisible(false);
+        cbuser_id2.setVisible(false);
+        cbemail.setVisible(false);
+        cbemail2.setVisible(false);
+        cbpassword.setVisible(false);
+        cbpassword2.setVisible(false);
+        cbfirst_name.setVisible(false);
+        cbfirst_name2.setVisible(false);
+        cblast_name.setVisible(false);
+        cblast_name2.setVisible(false);
+        cbaddress.setVisible(false);
+        cbaddress2.setVisible(false);
+        cbperformance_factor.setVisible(false);
+        cbperformance_factor2.setVisible(false);
+        cbcellphone.setVisible(false);
+        cbcellphone2.setVisible(false);
+        cbpayment_id.setVisible(false);
+        cbpayment_id2.setVisible(false);
+        btnVisor.setVisible(false);
         btnagregar.setText("Actualizar");
         
     }//GEN-LAST:event_rbCambiosMouseClicked
+
+    private void rbConsultasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbConsultasMouseClicked
+        // TODO add your handling code here:
+        btnValidar.setVisible(false);
+        btnBuscar.setVisible(false);
+        btnagregar.setText("Consultar");
+        cbuser_id.setVisible(true);
+        cbuser_id2.setVisible(true);
+        cbemail.setVisible(true);
+        cbemail2.setVisible(true);
+        cbpassword.setVisible(true);
+        cbpassword2.setVisible(true);
+        cbfirst_name.setVisible(true);
+        cbfirst_name2.setVisible(true);
+        cblast_name.setVisible(true);
+        cblast_name2.setVisible(true);
+        cbaddress.setVisible(true);
+        cbaddress2.setVisible(true);
+        cbperformance_factor.setVisible(true);
+        cbperformance_factor2.setVisible(true);
+        cbcellphone.setVisible(true);
+        cbcellphone2.setVisible(true);
+        cbpayment_id.setVisible(true);
+        cbpayment_id2.setVisible(true);
+        btnVisor.setVisible(true);
+        
+        
+        
+        
+    }//GEN-LAST:event_rbConsultasMouseClicked
+
+    private void btnVisorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVisorMouseClicked
+        // TODO add your handling code here:
+        System.out.println(armarConsulta());
+    }//GEN-LAST:event_btnVisorMouseClicked
+
+    private void cbpayment_id2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbpayment_id2MouseClicked
+        // TODO add your handling code here:
+        txtpayment_id.requestFocus();
+    }//GEN-LAST:event_cbpayment_id2MouseClicked
+
+    private void cbpayment_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbpayment_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbpayment_idActionPerformed
+
+    private void cbuser_id2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbuser_id2MouseClicked
+        // TODO add your handling code here:
+        txtuser_id.requestFocus();
+    }//GEN-LAST:event_cbuser_id2MouseClicked
+
+    private void cbemail2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbemail2MouseClicked
+        // TODO add your handling code here:
+        txtemail.requestFocus();
+    }//GEN-LAST:event_cbemail2MouseClicked
+
+    private void cbpassword2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbpassword2MouseClicked
+        // TODO add your handling code here:
+        txtpassword.requestFocus();
+    }//GEN-LAST:event_cbpassword2MouseClicked
+
+    private void cbfirst_name2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbfirst_name2MouseClicked
+        // TODO add your handling code here:
+        txtfirst_name.requestFocus();
+    }//GEN-LAST:event_cbfirst_name2MouseClicked
+
+    private void cblast_name2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cblast_name2MouseClicked
+        // TODO add your handling code here:
+         txtlast_name.requestFocus();
+    }//GEN-LAST:event_cblast_name2MouseClicked
+
+    private void cbaddress2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbaddress2MouseClicked
+        // TODO add your handling code here:
+        txtadress.requestFocus();
+    }//GEN-LAST:event_cbaddress2MouseClicked
+
+    private void cbperformance_factor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbperformance_factor2MouseClicked
+        // TODO add your handling code here:
+        txtperformance_factor.requestFocus();
+    }//GEN-LAST:event_cbperformance_factor2MouseClicked
+
+    private void cbcellphone2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbcellphone2MouseClicked
+        // TODO add your handling code here:
+        txtcellphone.requestFocus();
+    }//GEN-LAST:event_cbcellphone2MouseClicked
      
+    
     public void actualizarTabla(){
 
         final String TABLA_USERS = "users";//esto pede ser parametro
@@ -912,9 +1334,28 @@ public class FrameUsers extends javax.swing.JFrame {
     private javax.swing.ButtonGroup bg;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnValidar;
+    private javax.swing.JButton btnVisor;
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btncancelar;
     private javax.swing.JButton btnrestablecer;
+    private javax.swing.JCheckBox cbaddress;
+    private javax.swing.JCheckBox cbaddress2;
+    private javax.swing.JCheckBox cbcellphone;
+    private javax.swing.JCheckBox cbcellphone2;
+    private javax.swing.JCheckBox cbemail;
+    private javax.swing.JCheckBox cbemail2;
+    private javax.swing.JCheckBox cbfirst_name;
+    private javax.swing.JCheckBox cbfirst_name2;
+    private javax.swing.JCheckBox cblast_name;
+    private javax.swing.JCheckBox cblast_name2;
+    private javax.swing.JCheckBox cbpassword;
+    private javax.swing.JCheckBox cbpassword2;
+    private javax.swing.JCheckBox cbpayment_id;
+    private javax.swing.JCheckBox cbpayment_id2;
+    private javax.swing.JCheckBox cbperformance_factor;
+    private javax.swing.JCheckBox cbperformance_factor2;
+    private javax.swing.JCheckBox cbuser_id;
+    private javax.swing.JCheckBox cbuser_id2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel37;

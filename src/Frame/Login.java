@@ -185,6 +185,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jLabel9MouseExited(evt);
             }
@@ -597,6 +600,11 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
        new FrameUsers().setVisible(true);
     }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // TODO add your handling code here:
+        new FrameUsersTransaction().setVisible(true);
+    }//GEN-LAST:event_jLabel9MouseClicked
                          
     
    

@@ -27,7 +27,7 @@ public class ConexionBD {
 
     private String password = "chesterf51997";
     
-   
+   //pueder ser privado
     private ConexionBD() throws SQLException {
 
         try {

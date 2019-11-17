@@ -5,12 +5,15 @@
  */
 package vista;
 
+
+
+
 /**
  *
  * @author Chente
  */
 public class PruebaPF {
-    public static void main(String args[]){
-        
-    }
+   public static void main(String args){
+       
+   }
 }
