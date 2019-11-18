@@ -327,7 +327,7 @@ public class FrameGraficas extends javax.swing.JFrame {
             DefaultCategoryDataset dtsc = new DefaultCategoryDataset();
             
             for(int i = 0; i < TablaGraficas.getRowCount(); i++){
-                dtsc.setValue(Integer.parseInt(TablaGraficas.getValueAt(i, 0).toString()), TablaGraficas.getValueAt(i, 2).toString(), TablaGraficas.getValueAt(i, 2).toString());
+                dtsc.setValue(Integer.parseInt(TablaGraficas.getValueAt(i, 0).toString()), TablaGraficas.getValueAt(i, 1).toString(), TablaGraficas.getValueAt(i, 2).toString());
             }
             JFreeChart ch = ChartFactory.createBarChart3D("Grafica de barras 3D", "Cantidad", "Genero", dtsc,PlotOrientation.HORIZONTAL, true, true, false);
             ChartPanel cp = new ChartPanel(ch);
@@ -369,7 +369,12 @@ public class FrameGraficas extends javax.swing.JFrame {
             }
             JFreeChart ch = ChartFactory.createPieChart("Grafica de barras 3D", dtsc,true, true, false);
             ChartPanel cp = new ChartPanel(ch);
+            cp.setVisible(true);
+            ;
             
+            jPanel3.setLayout(new java.awt.BorderLayout());
+            jPanel3.add(cp);
+jPanel3.validate();
         }
             
     }//GEN-LAST:event_GraficarActionPerformed
