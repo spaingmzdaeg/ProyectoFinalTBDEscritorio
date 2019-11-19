@@ -214,6 +214,41 @@ public class UserTransactionDaoImpl implements IUserTransactionDAO {
         }
         return encontro;
     }
+
+    @Override
+    public void ejecutarTransaccion() {
+       
+        String sql = "UPDATE CHENTE.USERTRANSACTION SET amount = amount + 100 WHERE type = "
+                + "'Versus'";
+        
+        String sql2 = "UPDATE CHENTE.USERTRANSACTION SET amount = amount + 1000 WHERE type = "
+                + "'Linea'";
+        try {
+            PreparedStatement preparedStatement = ConexionBD2.getConnection().prepareStatement(sql);
+            PreparedStatement preparedStatement2 = ConexionBD2.getConnection().prepareStatement(sql2);
+            //preparedStatement.execute();
+            preparedStatement.executeUpdate();
+            preparedStatement2.executeUpdate();
+            
+            preparedStatement.close();
+            preparedStatement2.close();
+            
+            ConexionBD2.getConnection().commit();
+
+        }catch (SQLException e){
+            e.printStackTrace();
+             if(ConexionBD2.getConnection()!=null){
+            try {
+              ConexionBD2.getConnection().rollback();
+             } catch (SQLException ex) {
+                      System.out.println(ex.toString());
+            }
+    }
+            
+        }
+
+       
+    }
     }
 
     
